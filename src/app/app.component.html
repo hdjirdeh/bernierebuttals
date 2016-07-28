@@ -1,1 +1,9 @@
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+<h1>Feel the Bern</h1>
+
+<ul>
+  <li *ngFor="let objection of objections$ | async; let i = index" class="post">
+    <span>{{objection.name}}</span>
+    <span>{{objection.imagelink}}</span>
+  </li>
+</ul>
